@@ -1,0 +1,161 @@
+html,body{
+    margin: 0;
+    padding: 0;
+}
+
+/* nav bar *************************************/
+
+ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    flex-wrap: wrap;   
+}
+
+li{
+    list-style-type: none;
+    text-align: center;
+    margin: 2rem 2rem 0.5rem 2rem;
+}
+
+a{
+    color: #282828;
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: 100;
+    font-family: Roboto;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+nav{
+    display: flex;
+    background: #F7F7F7;
+    border-bottom: 0.1rem solid #EEEEEE;
+    border-top: 0.5rem solid #1B623F;
+    position:fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 99;
+}
+
+#logo{
+    height: 4.2rem;
+    margin: 0.5rem 0 0 1.5rem;
+}
+
+/* onder de nav **********************************/
+
+.banner{
+    background-image: url(images/background-image.png);
+    background-size: cover;
+    height: 275px;
+    width: 100%;
+}
+
+h1{
+    margin: 3.5em 0 3.4em 1em;
+    font-weight: 100;
+    font-size: 2.3rem;
+    text-transform: capitalize;
+    color: white;
+    font-family: courier;
+    position: absolute;
+    
+}
+
+h2{
+    font-weight: 500;
+    color: #1B623F;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* major breakpoint 1 */
+@media(min-width: 30em){
+    body{
+        color: black;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* intro text *******************************/
+
+.intro-text{
+    justify-content: center;
+    align-items: center;
+    padding: 3vw;
+    font-family: Roboto;
+    font-weight: 100;
+    color: #585858;
+}
+
+
+/* images ***********************************/
+
+.img-gebied{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.koffie-img{
+    padding: 20px;
+    margin-bottom: 35px;
+    border-top: 1px solid #afafaf;
+}
+
+.koffie-img-text{
+    display: flex;
+    justify-content: center;
+    font-family: Roboto;
+    font-weight: 100;
+    color: #585858;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (min-width: 800px) {
+    .intro-text-main{
+        width: 70%;
+    }
+  }
+
+

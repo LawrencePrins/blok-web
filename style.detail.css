@@ -23,7 +23,7 @@ ul:nth-child(1) {
     list-style-type: none;
 }
 
-/* "sign in" en "register" styling van de linkjes  ***********/
+/* "sign in" en "register"  ***********/
 
 ul:nth-child(1) a {
     text-transform: capitalize;
@@ -59,7 +59,7 @@ ul:nth-child(2) {
 ul:nth-child(2) li:hover a {
     background-color: black;
     padding-bottom: 23px;
-    padding-top: 10px;
+    padding-top: 15px;
     color: white;
 }
 
@@ -89,106 +89,93 @@ a {
     margin: 5px;
 }
 
-/* onder de nav, styling van elementen *******************/
-
-img {
-    margin: auto auto;
-}
-
-main div {
-    z-index: -99;
-    position: relative;
-    display: flex;
-    flex-wrap: nowrap;
-    justify-content: center;
-    background-color: #1f3933;
-}
-
 article {
-    margin: 90px auto 0;
-    width: 550px;
-    height: 400px;
-}
-
-
-main div:first-child p {
-    color: white;
-}
-
-main div:first-child button {
-    border: 1px solid white;
-    border-radius: 6px;
-    color: white;
-    padding: 8px 30px;
+    position: relative;
+    background-color: white;
+    padding-top: 30px;
 }
 
 h1 {
     text-align: left;
-    margin: 20px;
+    margin: 0 0 30px 60px;
     text-transform: capitalize;
     font-family: 'Crete Round', Georgia;
     font-size: 2em;
     font-style: italic;
-    color: white;
+    color: black;
+}
+
+/* https://www.youtube.com/watch?v=xoRbkm8XgfQ 
+::before & ::after uitleg */
+
+h1::before{
+    content: open-quote; 
+    font-size: 2em;
+    color: #F7F7F7;
+}
+
+h1::after{
+    content: close-quote; 
+    font-size: 2em;
+    color: #F7F7F7;
+}
+
+h2,
+h3 {
+    margin: 30px auto 0px;
+    text-transform: capitalize;
+    font-family: Roboto, sans-serif;
+    font-size: 25px;
+    color: black;
+    width: 90%;
 }
 
 p {
-    padding: 0 15px 0 0;
-    margin: 20px;
-    text-align: left;
-    line-height: 2.0;
-    font-family: roboto
+    margin: 10px auto;
+    width: 90%;
+    color: darkgrey;
+    font-family: roboto, sans-serif;
     font-size: .9em;
     font-weight: 400;
-    color: #1f3933;
+    line-height: 2.0;
 }
 
-button {
-    background-color: transparent;
-    border-style: none;
-    border-bottom: dotted 2px;
-    color: #1f3933;
-    padding: 8px 0 2px 0;
-    text-decoration: none;
-    text-transform: uppercase;
-    font-size: 1em;
+
+img:nth-child(2) {
+    float: left;
+    margin: 0 40px 20px 50px;
+    width: 40%;
+    height: auto;
+}
+
+table {
+    border-collapse: collapse;
+    width: 90%;
+    margin: 30px auto;
+}
+
+th {
+    text-align: left;
+    font-family: roboto, sans-serif;
+    padding: 10px 0 10px 0;
+    font-size: 2em;
+
+}
+
+td {
+    border-bottom: 1px solid #ddd;
+    text-align: left;
     font-weight: 600;
-    letter-spacing: 1px;
-    cursor: pointer;
-    margin: 20px;
+    font-family: roboto, sans-serif;
+    padding: 10px 10px 10px 0;
 }
 
-/* section onder de nav, deel2, fall cold brew ****/
-
-main div:nth-child(2) {
-    background-color: #f9f9f9;
+td:nth-child(even) {
+    text-align: right;
+    font-weight: 100;
+    padding: 10px 0 10px 10px;
 }
 
-h2 {
-    text-align: left;
-    margin: 20px;
-    text-transform: capitalize;
-    font-family: 'Crete Round', Georgia;
-    font-size: 2em;
-    font-style: italic;
-    color: #1f3933;
-}
-
-/* section onder de nav, deel3, enjoy more rewards **/
-
-main div:nth-child(3) {
-    background-color: #f0efed;
-}
-
-h3 {
-    text-align: left;
-    margin: 20px;
-    text-transform: capitalize;
-    font-family: 'Crete Round', Georgia;
-    font-size: 2em;
-    font-style: italic;
-    color: #1f3933;
-}
 
 /* footer *******************************************************************/
 
@@ -197,6 +184,7 @@ footer {
     border-top: 4px solid white;
     border-bottom: 4px solid white;
     height: auto;
+    margin-top: 20px;
 }
 
 /* footer, social media icons *************/
@@ -243,7 +231,7 @@ form input[type=text] {
     margin: 5px;
     border-radius: 5px;
     border: 1px solid darkgrey;
-    font-family: roboto
+    font-family: roboto, sans-serif;
     font-size: 1em;
 }
 
@@ -256,7 +244,7 @@ form input[type=submit] {
     padding: 5px 10px 5px 10px;
     margin: 5px;
     border-radius: 5px;
-    font-size: .8em;
+    font-size: .9em;
     color: white;
     text-transform: uppercase;
     font-weight: 700;
@@ -265,13 +253,17 @@ form input[type=submit] {
     width: 135px;
 }
 
-p:last-child {
+form p {
+    width: 90%;
+    margin: 10px;
     color: darkgrey;
+    font-family: roboto, sans-serif;
+    font-size: 1em;
+    font-weight: 400;
+    line-height: 2.0;
 }
 
-
 /* verandert in hamburger, (verspringt bij 1125px) *************/
-/* uitleg van media query https://www.w3schools.com/css/css3_mediaqueries_ex.asp ********/
 
 @media screen and (max-width: 1125px) {
 
@@ -311,7 +303,6 @@ p:last-child {
         margin-left: auto;
     }
 
-    /* styling van burger menu kruisje *****/
     .kruisje .lijn1 {
         transform: rotate(45deg) translate(5px, 6px);
         transition: 0.3s ease;
@@ -327,57 +318,40 @@ p:last-child {
     }
 
     /* voor een smooth animation, dmv z-index *****/
-    main div {
+    article {
         z-index: -999;
     }
 }
-
 
 /* verandert naar mobile, article + button *************/
 
 @media screen and (max-width: 713px) {
 
-    main div {
+    /* alles onder de nav *************************************/
+
+    article {
+        background-color: white;
+        position: relative;
+        display: flex;
         flex-wrap: wrap;
+        justify-content: center;
     }
 
-    article,
-    h1,
-    h2,
-    h3,
-    p {
-        width: auto;
-        height: 100%;
-        margin: 10px;
-        text-align: center;
+
+    img:nth-child(2) {
+        width: 70%;
+        height: auto;
     }
 
-    /* button in het midden ***************/
-
-    main div:first-child button {
-        display: block;
-        margin: 30px auto;
-    }
-
-    button {
-        display: block;
-        margin: 30px auto;
-    }
-}
-
-/* verbeterd de afbeeldingen *********/
-
-@media screen and (max-width: 412px) {
-
-    img {
-        width: 100%;
+    h1 {
+        margin: 20px 0;
     }
 }
 
 
 /* transitions ***********************/
 /* image transition */
-div img {
+article img {
     animation: transitionIn 0.2s;
 }
 
@@ -393,14 +367,30 @@ div img {
     }  
 }
 
-
-/* text transition */
-article {
+/* h1 transition */
+h1 {
     animation: transitionIn_2 0.2s;
 }
 
 @keyframes transitionIn_2 {
-     from {
+    from {
+        opacity: 0;
+        transform: translateY(-100%);
+    }
+    
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }  
+}
+
+/* text transition */
+article {
+    animation: transitionIn_3 0.2s;
+}
+
+@keyframes transitionIn_3 {
+    from {
         opacity: 0;
         transform: rotateX(-25deg);
     }
@@ -408,7 +398,7 @@ article {
     to {
         opacity: 1;
         transform: rotateX(0);
-    }
+    }  
 }
 
 /* transition link https://www.youtube.com/watch?v=zWB219zf1og */
